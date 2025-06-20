@@ -22,9 +22,9 @@ def main():
     st.title('ExpertCare Sales Performance 2025')
     @st.cache_data
     def load_data(url):
-        df = pd.read_csv(url)
+        df = pd.read_csv(url, on_bad_lines='skip')
         return df
-    df = load_data('https://github.com/KresnaFajri/Nose_Dashboard/blob/main/dataset/Clean_Shopee_16625.csv')
+    df = load_data('')
     month_order = {
     1:'January',
     2:'February',
