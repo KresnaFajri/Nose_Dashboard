@@ -20,7 +20,11 @@ def main():
 
     #alt.themes.enable("dark")
     st.title('ExpertCare Sales Performance 2025')
-
+    @st.cache_data
+    def load_data(url):
+        df = pd.read_csv(url)
+        return df
+    df = load_data('https://github.com/KresnaFajri/Nose_Dashboard/blob/main/dataset/Clean_Shopee_16625.csv')
     month_order = {
     1:'January',
     2:'February',
@@ -34,8 +38,7 @@ def main():
     10:'October',
     11:'November',
     12:'December'
-}
-    df = pd.read_csv('D:/KERJAAN/NOSE HERBAL/ANALYSIS/ExpertCare/Clean_Shopee_16625.csv')
+    }
 
     df['month'] = pd.to_datetime(df['scraping_date']).dt.month
 
