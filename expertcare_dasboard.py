@@ -176,7 +176,7 @@ def main():
                       color = 'Sales',labels = 'Nama Produk',
                  color_discrete_sequence= px.colors.sequential.Plasma_r,
                  text = 'Sales')
-        fig3.update_traces(marker_line_width=0,texttemplate="%{y}")
+        fig3.update_traces(marker_line_width=0,texttemplate="%{y}",hovertemplate = df_selected_month['Nama Produk'])
         fig3.update_layout(
             title = 'Highest Performing Product Based on Monthly Sales',
             xaxis = dict(
@@ -203,7 +203,7 @@ def main():
         fig4 = px.bar(df_top_product_revenue,x = 'short_name',y = 'revenue',color = 'revenue',labels = 'Nama Produk', 
                       color_continuous_scale= px.colors.sequential.Viridis,
                       text = 'revenue')
-        fig4.update_traces(marker_line_width=0, texttemplate="%{y}")
+        fig4.update_traces(marker_line_width=0, texttemplate="%{y}",hovertemplate=df_selected_month['Nama Produk'])
         fig4.update_layout(
             title = 'Revenue per Product (Rp)',
             xaxis = dict(
