@@ -24,7 +24,7 @@ def main():
     def load_data(url):
         df = pd.read_csv(url, on_bad_lines='skip')
         return df
-    df = load_data('')
+    df = load_data('dataset/Clean_Shopee_16625.csv')
     month_order = {
     1:'January',
     2:'February',
