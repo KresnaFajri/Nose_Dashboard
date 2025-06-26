@@ -1,0 +1,7 @@
+matplotlib==3.8.0
+pandas==2.3.0
+plotly==5.23.0
+regex==2024.11.6
+seaborn==0.13.2
+streamlit==1.46.0
+streamlit_option_menu==0.4.0
