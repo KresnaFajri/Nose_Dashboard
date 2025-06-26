@@ -1,11 +1,9 @@
 import streamlit as st
-from streamlit_option_menu import option_menu
 import pandas as pd
 import plotly.express as px
 import plotly.graph_objects as go
 import seaborn as sns
 import matplotlib.pyplot as plt
-import os
 import regex as re
 
 def main():
