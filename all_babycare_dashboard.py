@@ -24,7 +24,7 @@ def main():
         df = pd.read_csv(url, on_bad_lines = 'skip')
         return df
     
-    df = load_data('/dataset/Clean Brand.csv')
+    df = load_data('dataset/Clean Brand.csv')
 
     with st.sidebar:
         st.title('ExpertCare Product Sales Performance')
