@@ -26,7 +26,7 @@ def main():
     df = load_data('dataset/Clean Brand.csv')
 
     with st.sidebar:
-        st.title('ExpertCare Product Sales Performance')
+        st.title('Filter Sidebar')
 
         #Create available month list for the visitor to choose
         month_list = df['month'].unique().tolist()
