@@ -20,7 +20,7 @@ def main():
         df = pd.read_csv(url)
         return df
     
-    df = load_data(r'CleanData_FinallyFoundYou_30625.csv')
+    df = load_data('CleanData_FinallyFoundYou_30625.csv')
 
     month_order = {
     1:'January',
